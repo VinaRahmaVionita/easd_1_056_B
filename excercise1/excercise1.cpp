@@ -104,3 +104,12 @@ void input(int& n) {
         cin >> vina[i];
     }
 }
+// Fungsi display untuk menampilkan data yang telah diurutkan
+void display(int n) {
+    cout << "Sorted data:" << endl;
+    for (int i = 0; i < n; i++) {
+        cout << vina[i] << " ";
+    }
+    cout << endl;
+}
+
