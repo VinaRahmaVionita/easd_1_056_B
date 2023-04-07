@@ -72,3 +72,20 @@ void merge(int low, int mid, int high) {
     }
 }
 
+// Fungsi merge sort untuk mengurutkan array vina secara rekursif
+void mergeSort(int low, int high) {
+    // Base case, jika array hanya terdiri dari satu elemen, keluar dari fungsi
+    if (low >= high) {
+        return;
+    }
+    // Mencari titik tengah dari array
+    int mid = (low + high) / 2;
+
+    // Panggil mergeSort untuk setiap bagian array
+    mergeSort(low, mid);
+    mergeSort(mid + 1, high);
+
+    // Gabungkan kedua array menjadi satu
+    merge(low, mid, high);
+}
+
