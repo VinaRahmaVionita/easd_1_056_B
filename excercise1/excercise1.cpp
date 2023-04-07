@@ -40,4 +40,16 @@ void merge(int low, int mid, int high) {
     vr = mid + 1;
     k = low;
 
-    
+    // Menggabungkan kedua array
+    while (i <= mid && vr <= high) {
+        if (vina[i] <= vina[vr]) {
+            temp[k] = vina[i];
+            i++;
+        }
+        else {
+            temp[k] = vina[vr];
+            vr++;
+        }
+        k++;
+    }
+   
