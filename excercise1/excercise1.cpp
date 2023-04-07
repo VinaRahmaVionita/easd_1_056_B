@@ -89,3 +89,18 @@ void mergeSort(int low, int high) {
     merge(low, mid, high);
 }
 
+// Fungsi input untuk meminta pengguna memasukkan data
+void input(int& n) {
+    // Meminta pengguna memasukkan jumlah data
+    do {
+        cout << "Enter the number of data (maximum " << MAX_DATA << "): ";
+        cin >> n;
+    } while (n <= 0 || n > MAX_DATA);
+
+    // Meminta pengguna memasukkan setiap data
+    cout << "Enter " << n << " numbers:" << endl;
+    for (int i = 0; i < n; i++) {
+        cout << "Data " << i + 1 << ": ";
+        cin >> vina[i];
+    }
+}
