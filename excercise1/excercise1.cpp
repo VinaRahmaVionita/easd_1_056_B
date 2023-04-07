@@ -59,4 +59,11 @@ void merge(int low, int mid, int high) {
         k++;
     }
 
-    
+    // Menyalin sisa elemen array kedua
+    while (i <= mid) {
+        temp[k] = vina[i];
+        i++;
+        k++;
+    }
+
+   
