@@ -123,4 +123,8 @@ int main() {
     // Panggil fungsi mergeSort untuk mengurutkan array vina
     mergeSort(0, n - 1);
 
-   
+    // Panggil fungsi display untuk menampilkan data yang telah diurutkan
+    display(n);
+
+    return 0;
+}
