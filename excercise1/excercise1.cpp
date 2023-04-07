@@ -31,3 +31,13 @@ const int MAX_DATA = 76;
 // Deklarasi array vina dengan ukuran maksimum MAX_DATA
 int vina[MAX_DATA];
 
+// Fungsi merge untuk menggabungkan dua array menjadi satu
+void merge(int low, int mid, int high) {
+    int i, vr, k;
+    int temp[MAX_DATA];
+
+    i = low;
+    vr = mid + 1;
+    k = low;
+
+    
