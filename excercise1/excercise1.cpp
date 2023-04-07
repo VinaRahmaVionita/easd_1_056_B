@@ -66,4 +66,9 @@ void merge(int low, int mid, int high) {
         k++;
     }
 
-   
+    // Menyalin elemen yang sudah digabungkan ke dalam array vina
+    for (k = low; k <= high; k++) {
+        vina[k] = temp[k];
+    }
+}
+
