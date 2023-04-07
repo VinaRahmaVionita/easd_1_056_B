@@ -113,3 +113,11 @@ void display(int n) {
     cout << endl;
 }
 
+// Fungsi utama
+int main() {
+    int n;
+
+    // Panggil fungsi input untuk meminta pengguna memasukkan data
+    input(n);
+
+    
