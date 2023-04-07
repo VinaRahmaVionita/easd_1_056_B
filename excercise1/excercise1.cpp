@@ -120,4 +120,7 @@ int main() {
     // Panggil fungsi input untuk meminta pengguna memasukkan data
     input(n);
 
-    
+    // Panggil fungsi mergeSort untuk mengurutkan array vina
+    mergeSort(0, n - 1);
+
+   
